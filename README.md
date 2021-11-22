@@ -30,3 +30,8 @@ we need to find unique triplets with a+b+c =0, let’s say we know the value of 
 if we take all the possible (a,b) pairs, we can get all pairs of a,b using 2 nested for loops. after that, we can use binary search to know if c=-(a+b) exists in the given array or not.
 if it exists then the triplet (a,b,-(a+b)) will be a possible triplet. in this way, we will get all the possible triplets with a+b+c=0, but we need to find the unique triplets,
 for that we can insert all these possible triplets in some data structure( i.e. set) to get unique triplets.
+
+Time Complexity
+O(N*N*log(N)): we are using two nested for loops to get all the possible (a,b) pair and a Binary search to know if -(a+b) exists in the array or not.
+Space Complexity 
+O(N): we are using a set to get unique triplets.
